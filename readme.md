@@ -43,7 +43,9 @@ git push -u origin test <br>
 
 ~~~
 将dev分支合并到test分支（开发完，单测后将dev分支代码合并到test分支提测）
-
+<p>
+git merge的基本用法为把一个分支或或某个commit的修改合并到现在的分支上。
+<p>
 分支合并步骤（将dev分支合并到test分支）
 
 （1）、分支切换： git  checkout test

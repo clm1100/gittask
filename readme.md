@@ -106,5 +106,10 @@ git branch
 - 或者用简单语法: git push origin clm
 
 
+#### 当我想从远程仓库里拉取一条本地不存在的分支时：
+
+- 先执行 git fetch 拉取所有仓库信息
+- git checkout -b 本地分支名 origin/远程分支名
+
 
 wozai sm 21332132131我是sm修改的

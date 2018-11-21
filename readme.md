@@ -1,28 +1,32 @@
-…or create a new repository on the command line<br>
-echo "# gittask" >> README.md<br>
+
+### 本地仓库初始化连接远程仓库操作：
+
+~~~
 git init<br>
 git add README.md<br>
 git commit -m "first commit"<br>
 git remote add origin git@github.com:clm1100/gittask.git<br>
 git push -u origin master<br>
-…or push an existing repository from the command line<br>
+//…or push an existing repository from the command line<br>
 git remote add origin git@github.com:clm1100/gittask.git<br>
 git push -u origin master<br>
-
 ~~~
-4、推送本地分支local_branch到远程分支 remote_branch并建立关联关系
 
-      a.远程已有remote_branch分支并且已经关联本地分支local_branch且本地已经切换到local_branch
 
-          git push
 
-     b.远程已有remote_branch分支但未关联本地分支local_branch且本地已经切换到local_branch
+### 推送本地分支local_branch到远程分支 remote_branch并建立关联关系
+~~~
+a.远程已有remote_branch分支并且已经关联本地分支local_branch且本地已经切换到local_branch
 
-         git push -u origin/remote_branch
+    git push
 
-     c.远程没有有remote_branch分支并，本地已经切换到local_branch
+b.远程已有remote_branch分支但未关联本地分支local_branch且本地已经切换到local_branch
 
-        git push origin local_branch:remote_branch
+    git push -u origin/remote_branch
+
+c.远程没有有remote_branch分支并，本地已经切换到local_branch
+
+git push origin local_branch:remote_branch
 ~~~
 
 ### 注意切换分支后 git push 分支时 用的语法是
@@ -65,3 +69,6 @@ git merge的基本用法为把一个分支或或某个commit的修改合并到�
 在我们合并之前把本地test分支从远程更新为了最新的代码版本，所以这时如果没有人提交新代码到test远程分支，则test本地代码和远程代码是一样的，这时我们在合并本地dev的代码到本地test，这时本地test的代码相比远程就多dev中开发的代码，所以这时我们提交本地test分支作为远程的test分支是正常。
 
 ~~~
+
+
+

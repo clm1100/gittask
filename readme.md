@@ -93,18 +93,23 @@ git branch
 ~~~
 测试行111111111123231
 
-####我在clm分支111
+#### 我在clm分支111
 
 
-####本地创建一个分支并推送到远端
+#### 本地创建一个分支并推送到远端
 
 - 新建本地分支 git branch clm
 - 切换到本地分支 git checkout clm
 - 将本地分支推送到远程仓库,并建立远程同名仓库:git push origin clm:clm
 - 或者用简单语法: git push origin clm
 
+#### 删除分支
+- 删除远程分支 git push origin --delete 远程分支名
+- 删除分支 git branch -d 分支名
 
 #### 回退提交版本
 - 根据log信息查看回退到哪个版本 git log 
 - 回退 git reset --hard 2132323213213(commit版本号);
 - git push 推送;
+
+

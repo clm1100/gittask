@@ -107,8 +107,5 @@ git branch
 
 
 
-<<<<<<< HEAD
 wozai sm 21332132131 我是master修改的
-=======
 wozai sm 21332132131我是sm修改的
->>>>>>> sm

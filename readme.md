@@ -43,16 +43,19 @@ git push origin test
 之后的操作 add commit 语法何在主分支一样使用;<br>
 ### 但是需要注意：
 //git push 时需要设置在本分支默认提交到远程仓库的分支;如何设置呢？？？<br>
-git push -u origin test <br>
+~~~
+git push -u origin test 
+~~~
 //意思是将本地仓库的test分支提交到远程仓库的test分支，
 //并默认在此分支下默认git push 就是提交到test分支;
-~~~
+
 
 ###  将dev分支合并到test分支（开发完，单测后将dev分支代码合并到test分支提测）
 #### git merge的基本用法为把一个分支合并到当前分支。
 
 分支合并步骤（将dev分支合并到test分支）
 
+~~~
 （1）分支切换: git  checkout test
 
 将本地从dev分支切换到test分支
@@ -66,6 +69,8 @@ git push -u origin test <br>
 将本地dev分支合并到本地test分支
 
 （4）提交本地test分支作为远程的test分支: git push origin  test:test
+~~~
+
 
 在我们合并之前把本地test分支从远程更新为了最新的代码版本，所以这时如果没有人提交新代码到test远程分支，则test本地代码和远程代码是一样的，这时我们在合并本地dev的代码到本地test，这时本地test的代码相比远程就多dev中开发的代码，所以这时我们提交本地test分支作为远程的test分支是正常。
 

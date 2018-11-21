@@ -13,6 +13,17 @@ git push -u origin master
 ~~~
 
 
+### 常用命令:
+#### 查看远程仓库
+~~~
+git remote -v
+~~~
+#### 查看本地仓库
+
+~~~
+git remote
+~~~
+
 
 ### 推送本地分支local_branch到远程分支 remote_branch并建立关联关系
 ~~~
@@ -68,19 +79,6 @@ git push -u origin test
 
 在我们合并之前把本地test分支从远程更新为了最新的代码版本，所以这时如果没有人提交新代码到test远程分支，则test本地代码和远程代码是一样的，这时我们在合并本地dev的代码到本地test，这时本地test的代码相比远程就多dev中开发的代码，所以这时我们提交本地test分支作为远程的test分支是正常。
 
-### 常用命令:
-#### 查看远程仓库
-~~~
-git remote -v
-~~~
-#### 查看本地仓库
-
-~~~
-git remote -v
-~~~
-
-#### 查看所有仓库
-
 
 ### 关于分支的命令;
 
@@ -106,7 +104,7 @@ git branch
 - 或者用简单语法: git push origin clm
 
 
-
-wozai sm 21332132131
-
-爱上当到达
+#### 回退提交版本
+- 根据log信息查看回退到哪个版本 git log 
+- 回退 git reset --hard 2132323213213(commit版本号);
+- git push 推送;

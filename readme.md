@@ -26,27 +26,28 @@ b.远程已有remote_branch分支但未关联本地分支local_branch且本地�
 
 c.远程没有有remote_branch分支并，本地已经切换到local_branch
 
-git push origin local_branch:remote_branch
+    git push origin local_branch:remote_branch
 ~~~
 
 ### 注意切换分支后 git push 分支时 用的语法是
 ~~~
 git push origin local_branch:remote_branch
 ~~~
-简写语法为:
+
+###简写语法为:
+####(只有分支名称远程和本地名称一样)
 ~~~
-git push origin test(分支名称远程和本地名称一样)
+git push origin test
 ~~~
 
-之后add commit 语法何在主分支一样使用;
-但是需要注意：
-git push 时需要设置在本分支默认提交到远程仓库的分支；如何设置呢？？？<br>
+之后的操作 add commit 语法何在主分支一样使用;<br>
+### 但是需要注意：
+git push 时需要设置在本分支默认提交到远程仓库的分支;如何设置呢？？？<br>
 git push -u origin test <br>
 意思是将本地仓库的test分支提交到远程仓库的test分支；并默认在此分支下默认git push 就是提交到test分支;
-
-
 ~~~
-将dev分支合并到test分支（开发完，单测后将dev分支代码合并到test分支提测）
+
+### 将dev分支合并到test分支（开发完，单测后将dev分支代码合并到test分支提测）
 <p>
 git merge的基本用法为把一个分支或或某个commit的修改合并到现在的分支上。
 <p>

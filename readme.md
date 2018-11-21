@@ -56,17 +56,11 @@ git push -u origin test
 分支合并步骤（将dev分支合并到test分支）
 
 ~~~
-（1）分支切换: git  checkout test
-
-将本地从dev分支切换到test分支
+（1）分支切换,将本地从dev分支切换到test分支: git  checkout test
 
 （2）将本地test分支更新为最新: git pull
 
-将本地test分支从远程跟新为最新
-
-（3）分支合并: git merge dev
-
-将本地dev分支合并到本地test分支
+（3）将本地dev分支合并到本地test分支: git merge dev
 
 （4）提交本地test分支作为远程的test分支: git push origin  test:test
 ~~~

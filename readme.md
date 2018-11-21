@@ -98,4 +98,13 @@ git branch
 ####我在clm分支111
 
 
+####本地创建一个分支并推送到远端
 
+- 新建本地分支 git branch clm
+- 切换到本地分支 git checkout clm
+- 将本地分支推送到远程仓库,并建立远程同名仓库:git push origin clm:clm
+- 或者用简单语法: git push origin clm
+
+
+
+wozai sm

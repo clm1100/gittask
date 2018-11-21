@@ -105,7 +105,7 @@ git branch
 - 将本地分支推送到远程仓库,并建立远程同名仓库:git push origin clm:clm
 - 或者用简单语法: git push origin clm
 
+#### 删除分支
+- 删除远程分支 git push origin --delete 远程分支名
+- 删除分支 git branch -d 分支名
 
-
-wozai sm 21332132131 我是master修改的
-wozai sm 21332132131我是sm修改的
